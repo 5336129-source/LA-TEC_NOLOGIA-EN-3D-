@@ -204,3 +204,24 @@ body { min-height: 100vh; }
   .main-nav.open { display: flex; }
   .main-nav .nav-link { justify-content: flex-start; }
 }
+.video-frame {
+  position: relative;
+  width: 100%;
+  min-height: 260px;
+  overflow: hidden;
+}
+
+.video-frame video {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  min-height: 260px;
+  max-height: 650px;
+  background: #03060d;
+}
+
+.video-placeholder[hidden] {
+  display: none !important;
+}
