@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mi Historia Digital: un recorrido por la tecnología en 3D.">
+  <title>Mi Historia Digital | Tecnología en 3D</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-glow glow-one" aria-hidden="true"></div>
+  <div class="page-glow glow-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" data-view="inicio" aria-label="Mi Historia Digital, inicio">
+      <span class="brand-mark">3D</span>
+      <span>MI HISTORIA <strong>DIGITAL</strong></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a class="nav-link active" href="#inicio" data-view="inicio">Inicio</a>
+      <a class="nav-link" href="#video" data-view="video">Cortometraje</a>
+      <a class="nav-link" href="#explorar" data-view="explorar">Explorar 3D</a>
+      <a class="nav-link" href="#opiniones" data-view="opiniones">Opiniones</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap page-view" id="inicio" data-page="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> PROYECTO TECNOLÓGICO · 2026</p>
+        <h1>La tecnología <span>en 3D</span></h1>
+        <p class="hero-lead">Creando el futuro, una dimensión a la vez.</p>
+        <p class="hero-description">Descubre cómo los modelos tridimensionales están transformando la creatividad, la educación, el entretenimiento y la forma en que diseñamos el mundo.</p>
+        <a class="primary-button" href="#video" data-view="video">Ver cortometraje <span aria-hidden="true">↘</span></a>
+        <div class="hero-meta">
+          <span><span class="meta-icon">◈</span> Modelado digital</span>
+          <span><span class="meta-icon">◉</span> Innovación</span>
+          <span><span class="meta-icon">△</span> Creatividad</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración decorativa de una figura tridimensional">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="cube-scene">
+          <div class="cube">
+            <div class="cube-face front"></div>
+            <div class="cube-face back"></div>
+            <div class="cube-face right"></div>
+            <div class="cube-face left"></div>
+            <div class="cube-face top"></div>
+            <div class="cube-face bottom"></div>
+          </div>
+        </div>
+        <div class="floating-label label-top"><span class="label-dot"></span> PROFUNDIDAD</div>
+        <div class="floating-label label-bottom">X <b>+</b> Y <b>+</b> Z</div>
+        <div class="art-caption">IMAGINAR · MODELAR · CREAR</div>
+      </div>
+    </section>
+
+    <section class="video-section section-wrap page-view" id="video" data-page="video">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / CORTOMETRAJE</p>
+          <h2>El mundo en tres dimensiones</h2>
+        </div>
+        <span class="duration-pill">Duración objetivo: 03:00</span>
+      </div>
+      <div class="video-frame">
+        <video id="videoProyecto" controls preload="metadata" playsinline>
+          <source src="C:\Users\MINED\Downloads\videomp4.mp4" type="video/mp4">
+        </video>
+        <div class="video-placeholder" id="videoPlaceholder">
+          <div class="play-symbol">▶</div>
+          <h3>Tu cortometraje va aquí</h3>
+          <p>Coloca el archivo de tu video en esta carpeta y llámalo <code>video.mp4</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section section-wrap page-view" id="reflexion" data-page="explorar">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / EXPLORAR</p>
+          <h2>¿Qué es la tecnología 3D?</h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <article class="info-card main-info">
+          <div class="card-symbol">◇</div>
+          <h3>Más que una imagen plana</h3>
+          <p>La tecnología 3D permite crear representaciones digitales con alto, ancho y profundidad. Los objetos pueden observarse desde distintos ángulos y utilizarse en animaciones, videojuegos, arquitectura, educación, medicina e impresión de objetos.</p>
+          <p>Con herramientas de modelado digital, las ideas pueden convertirse en diseños que después se visualizan, se modifican o, cuando se cuenta con el equipo adecuado, se fabrican físicamente.</p>
+        </article>
+        <article class="info-card mini-info">
+          <span class="mini-number">01</span>
+          <h3>Diseño</h3>
+          <p>Crear modelos, formas y escenarios digitales.</p>
+        </article>
+        <article class="info-card mini-info">
+          <span class="mini-number">02</span>
+          <h3>Visualización</h3>
+          <p>Observar objetos desde diferentes perspectivas.</p>
+        </article>
+        <article class="info-card mini-info">
+          <span class="mini-number">03</span>
+          <h3>Innovación</h3>
+          <p>Probar ideas y resolver problemas de nuevas maneras.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reflection-section section-wrap page-view explore-extra" data-page="explorar">
+      <div class="reflection-panel">
+        <div class="reflection-icon">✦</div>
+        <div>
+          <p class="eyebrow">03 / REFLEXIÓN PERSONAL</p>
+          <h2>La tecnología también es imaginación</h2>
+          <p>Este cortometraje nos invita a reconocer que la tecnología 3D no se limita a los videojuegos o al entretenimiento. También puede apoyar el aprendizaje, ayudar a visualizar proyectos y abrir nuevas oportunidades para diseñar soluciones. Aprender sobre estas herramientas nos recuerda que la creatividad y el conocimiento tecnológico pueden trabajar juntos para construir nuevas ideas. Es importante utilizarlas de manera responsable y seguir aprendiendo para aprovechar sus posibilidades.</p>
+          <p class="reflection-authors">— Oscar y Alex <span>· Autores del proyecto</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback-section section-wrap page-view" id="opiniones" data-page="opiniones">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">04 / PARTICIPA</p>
+          <h2>Comparte tu opinión</h2>
+          <p class="section-intro">¿Qué te pareció el cortometraje? Tu comentario nos ayuda a mejorar.</p>
+        </div>
+      </div>
+      <div class="feedback-grid">
+        <form class="feedback-form" id="formularioOpinion" novalidate>
+          <div class="field-group">
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" maxlength="60" autocomplete="name" required>
+            <small class="field-error" id="errorNombre"></small>
+          </div>
+          <div class="field-group">
+            <label for="comentario">Comentario u opinión</label>
+            <textarea id="comentario" name="comentario" rows="4" maxlength="500" placeholder="¿Qué aprendiste sobre la tecnología 3D?" required></textarea>
+            <small class="field-error" id="errorComentario"></small>
+          </div>
+          <fieldset class="rating-field">
+            <legend>Califica el cortometraje</legend>
+            <div class="stars" role="radiogroup" aria-label="Calificación de una a cinco estrellas">
+              <input type="radio" name="calificacion" id="estrella1" value="1">
+              <label for="estrella1" title="1 estrella">★</label>
+              <input type="radio" name="calificacion" id="estrella2" value="2">
+              <label for="estrella2" title="2 estrellas">★</label>
+              <input type="radio" name="calificacion" id="estrella3" value="3">
+              <label for="estrella3" title="3 estrellas">★</label>
+              <input type="radio" name="calificacion" id="estrella4" value="4">
+              <label for="estrella4" title="4 estrellas">★</label>
+              <input type="radio" name="calificacion" id="estrella5" value="5">
+              <label for="estrella5" title="5 estrellas">★</label>
+            </div>
+            <small class="rating-help" id="textoCalificacion">Selecciona de 1 a 5 estrellas.</small>
+            <small class="field-error" id="errorCalificacion"></small>
+          </fieldset>
+          <button class="primary-button submit-button" type="submit">Enviar opinión <span aria-hidden="true">→</span></button>
+          <p class="privacy-note">La demostración muestra las opiniones en esta página. No se envían a una base de datos ni a un servidor.</p>
+          <div class="form-status" id="estadoFormulario" role="status" aria-live="polite"></div>
+        </form>
+        <aside class="opinions-panel">
+          <div class="opinions-heading">
+            <div>
+              <p class="eyebrow">COMUNIDAD</p>
+              <h3>Opiniones recibidas</h3>
+            </div>
+            <span class="opinion-count" id="contadorOpiniones">0</span>
+          </div>
+          <p class="empty-state" id="sinOpiniones">Todavía no hay opiniones. ¡Sé la primera persona en compartir la tuya!</p>
+          <div class="opinions-list" id="listaOpiniones" aria-live="polite"></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio" data-view="inicio"><span class="brand-mark">3D</span><span>MI HISTORIA <strong>DIGITAL</strong></span></a>
+    <p>Proyecto tecnológico · Tecnología en 3D · 2026</p>
+    <a href="#inicio" class="back-top" data-view="inicio">Volver al inicio ↑</a>
+  </footer>
+</body>
+</html>
